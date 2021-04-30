@@ -1,0 +1,82 @@
+﻿@model PaymentOrders.ServiceReference1.PaymentOrder
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>PaymentOrder</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.OrigConID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OrigConID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PaymentNotes)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PaymentNotes)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RemitterID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RemitterID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TransactionID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TransactionID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RecipientID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RecipientID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Remitter)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Remitter)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Recipient)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Recipient)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Transaction)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Transaction)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

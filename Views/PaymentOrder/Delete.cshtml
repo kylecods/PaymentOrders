@@ -1,0 +1,89 @@
+﻿@model PaymentOrders.ServiceReference1.PaymentOrder
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>PaymentOrder</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.OrigConID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OrigConID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PaymentNotes)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PaymentNotes)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RemitterID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RemitterID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TransactionID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TransactionID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RecipientID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RecipientID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Remitter)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Remitter)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Recipient)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Recipient)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Transaction)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Transaction)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>
